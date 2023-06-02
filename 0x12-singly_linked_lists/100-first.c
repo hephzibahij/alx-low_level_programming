@@ -3,9 +3,8 @@
 void first(void)__attribute__((constructor));
 
 /**
- * first - print the first statement befor the main
+ * first - print the first statement before the main
  * let the function be complied
- *
  */
 void first(void)
 {
