@@ -7,6 +7,6 @@
  */
 int main(void)
 {
-	printf("(A tortoise,challenges a hare to a race knowing hare's nature\n");
+	printf("A tortoise having pretty good sense of a hare's nature\n");
 	return (0);
 }
