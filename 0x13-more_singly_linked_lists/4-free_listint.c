@@ -6,6 +6,8 @@
 /**
  * free_listint - note the free linked element in the listint
  * @head: wite the freed listint
+ *
+ * Return: 0
  */
 void free_listint(listint_t *head)
 {
