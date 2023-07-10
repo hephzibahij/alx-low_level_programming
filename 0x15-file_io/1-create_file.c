@@ -1,13 +1,13 @@
 #include "main.h"
 #include <stdio.h>
-#include <sys/stat.h>
+#include <unistd.h>
 
 /**
  * create_file - Creates a file in the main
  * @filename: A filename to be created
  * @text_content: name the text content
  *
- * Return: If the function is -1.
+ * Return: If the function fails is -1.
  *         Otherwise - 1.
  */
 int create_file(const char *filename, char *text_content)
