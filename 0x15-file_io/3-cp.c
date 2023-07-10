@@ -20,10 +20,9 @@ char *create_buffer(char *file)
 	if (buffer == NULL)
 	{
 		dprintf(STDERR_FILENO,
-			"Error: Can't write to %s\n", file);
+				"Error: Can't write to %s\n", file);
 		exit(99);
 	}
-
 	return (buffer);
 }
 
@@ -33,11 +32,11 @@ char *create_buffer(char *file)
  */
 void close_file(int fd)
 {
-	int c;
+	int a;
 
-	c = close(fd);
+	a = close(fd);
 
-	if (c == -1)
+	if (a == -1)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fd);
 		exit(100);
@@ -46,7 +45,7 @@ void close_file(int fd)
 
 /**
  * main - Copies the contents of a file to another file.
- * @argc: The number of arguments supplied to the program.
+ * @argc: The number of arguments counted
  * @argv: An array of pointers to the arguments.
  *
  * Return: 0 on success.
